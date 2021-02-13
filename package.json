@@ -10,14 +10,27 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:highlight-block.helloWorld"
+		"onCommand:highlight-block.highlight",
+		"onCommand:highlight-block.clear-highlight",
+		"onCommand:highlight-block.clear-all-highlight"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "highlight-block.helloWorld",
-				"title": "Hello World"
+				"command": "highlight-block.highlight",
+				"category": "Highlight Block",
+				"title": "Highlight"
+			},
+			{
+				"command": "highlight-block.clear-highlight",
+				"category": "Highlight Block",
+				"title": "Clear Highlight"
+			},
+			{
+				"command": "highlight-block.clear-all-highlight",
+				"category": "Highlight Block",
+				"title": "Clear All Highlight"
 			}
 		]
 	},
